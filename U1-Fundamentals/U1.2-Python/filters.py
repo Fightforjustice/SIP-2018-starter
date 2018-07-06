@@ -1,6 +1,6 @@
 # Rename this file to be "filters.py"
 # Add commands to import modules here.
-
+from PIL import Image
 # Define your load_img() function here.
 #       Parameters: The name of the file to be opened (string)
 #       Returns: The image object with the opened file.
