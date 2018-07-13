@@ -1,6 +1,7 @@
 # Rename this file to be "filters.py"
 # Add commands to import modules here.
 from PIL import Image
+from math import *
 # Define your load_img() function here.
 #       Parameters: The name of the file to be opened (string)
 #       Returns: The image object with the opened file.
@@ -45,5 +46,9 @@ def obamicon(image):
     new_image = new_image.putdata(sequence)
     return new_image
         
+def my_filter(image):
+  new_image = PIL.Image.new(RBG, image.size)
+  
+  
   
   
