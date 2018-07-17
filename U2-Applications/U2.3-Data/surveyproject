@@ -1,0 +1,51 @@
+
+# Creates the dictionary to store responses.
+answers = {}
+
+'''
+Below, write code that will pose the survey questions from the student prompt
+to a user. Your program should save user input as a dictionary.
+'''
+questions = [['What is your name?', 'alpha'], ['What is your date of birth?', 'date'], ['What is your age?' 'number'], ['Where is your home? (City, State, Country)', 'place'],
+             ['How many people live in your home more than half the time?', 'number'], ['What is an app/website you use daily?', none]]
+
+for q in questions:
+    answers[q] = input(questions[q][0])
+    answer = answers[q]
+    itype = questions[q][2]
+    if (itype == 'alpha'):
+        if (answer.isalpha() == false):
+            print('Only letters, please!')
+    
+    elif (itype == 'number'(:
+        if (answer.isnumber() == false):
+            print('Enter a number, please!)
+                  
+    elif (itype == 'date'):
+        message = 'Please enter date in MM/DD/YYYY format')
+        if ('/' not in answer):
+          print(message)
+        else:
+          datelist = answer.split('/')
+          for d in datelist:
+              if (d.isinteger == false):
+                   print('Numeric dates, please!')
+                   break
+          if (len(datelist) != 3) or (len(datelist[0]) != 2) or (len(datelist[1]) != 2) or (len(datelist[2]) != 4) or (datelist[0] not in range(1, 13))
+             or (datelist[1] not in range(0, 32)):
+                  print('Not a valid date!', message)
+                            
+     elif (itype == 'place'):
+         if (',' not in answer):
+              print('Please separate City, State, and Country with commas!')
+         elif(answer.split(', ')!=3):
+              print('Please enter a City, State, and Country, separated with commas.')
+         else:
+             for ans in answer:
+                 if ans.isalpha == false:
+                      print('No numbers, please.')
+          
+# Print the context of the dictionary.
+for key, value in answers:
+    
+print(key[0], value, /n)
